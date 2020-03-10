@@ -1,0 +1,106 @@
+clear
+x = -10:0.1:10;
+
+lam2 = 1;
+a2 =5;
+b2 = 0.1;
+y2 = blinex(a2,b2,lam2,x);
+plot(x,y2,':','LineWidth',3);hold on;
+
+lam1 = 2;
+a1 =5;
+b1 = 0.1;
+y1 = blinex(a1,b1,lam1,x);
+plot(x,y1,'k','LineWidth',2);hold on;
+
+
+lam3 = 2;
+a3 =0.01;
+b3 = 0.001;
+y3 = blinex(a3,b3,lam3,x);
+plot(x,y3,'--','LineWidth',2.5);hold on;
+
+
+
+set(gca,'XLim',[-4 4]);%X轴的数据显示范围
+set(gca,'YLim',[0 1.2]);%X轴的数据显示范围
+set(gca,'linewidth',1.5);
+set(gca,'FontSize',20);  %是设置刻度字体大小
+h=legend('a=5, b=0.1, \lamda=1','a=5 b=0.1 c=2','a=0.01 b=0.001 c=2');
+set(h,'FontName','Times New Roman','FontSize',14,'FontWeight','normal');
+box on;
+
+
+
+
+%------------------------------------------------------------------------------------------------------------
+% lam1 = 1;
+% a1 =5;
+% b1 = 0.1;
+% y1 = blinex(a1,b1,lam1,x);
+% plot(x,y1,'k--','LineWidth',2);hold on;
+% 
+% lam1 = 1;
+% a1 =5;
+% b1 = 0.01;
+% y1 = blinex(a1,b1,lam1,x);
+% plot(x,y1,'r--','LineWidth',2);hold on;
+% 
+% lam1 = 1;
+% a1 =5;
+% b1 = 1;
+% y1 = blinex(a1,b1,lam1,x);
+% plot(x,y1,'b--','LineWidth',2);hold on;
+% 
+% 
+% 
+% lam1 = 1;
+% a1 =5;
+% b1 = 0.01;
+% y1 = blinex(a1,b1,lam1,x);
+% plot(x,y1,'k','LineWidth',2);hold on;
+% 
+% lam1 = 1;
+% a1 =10;
+% b1 = 0.01;
+% y1 = blinex(a1,b1,lam1,x);
+% plot(x,y1,'r','LineWidth',2);hold on;
+% 
+% lam1 = 1;
+% a1 =1;
+% b1 = 0.01;
+% y1 = blinex(a1,b1,lam1,x);
+% plot(x,y1,'b','LineWidth',2);hold on;
+% 
+% 
+% 
+% 
+% lam1 = 1;
+% a1 =5;
+% b1 = 0.01;
+% y1 = blinex(a1,b1,lam1,x);
+% plot(x,y1,'k:','LineWidth',2);hold on;
+% 
+% lam1 = 2;
+% a1 =5;
+% b1 = 0.01;
+% y1 = blinex(a1,b1,lam1,x);
+% plot(x,y1,'r:','LineWidth',2);hold on;
+% 
+% lam1 = 5;
+% a1 =5;
+% b1 = 0.01;
+% y1 = blinex(a1,b1,lam1,x);
+% plot(x,y1,'b:','LineWidth',2);hold on;
+% 
+% 
+% 
+% set(gca,'XLim',[-3 3]);%X轴的数据显示范围
+% set(gca,'YLim',[0 1.2]);%X轴的数据显示范围
+% set(gca,'linewidth',1.5);
+% set(gca,'FontSize',20);  %是设置刻度字体大小
+% h=legend('b=0.1 a=5 c=1','b=0.1 a=5 c=2','b=0.1 a=5 c=5');
+% set(h,'FontName','Times New Roman','FontSize',14,'FontWeight','normal');
+% box on;
+
+
